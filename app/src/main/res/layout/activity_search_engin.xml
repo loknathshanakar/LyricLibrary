@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ENGINE_LAYOUT"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#2492e4"
+    android:transitionGroup="false"
+    tools:context="com.example.lokanath.lyriclibrary.SearchEngin">
+
+    <EditText
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:allowUndo="true"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Enter Song Name"
+        android:inputType="text"
+        android:textColor="#002F3D"
+        android:textColorHint="#002031"
+        android:textIsSelectable="true"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/songName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:allowUndo="true"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="Enter Artist Name"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textColor="#002F3D"
+        android:textColorHint="#002031"
+        android:textIsSelectable="true"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/songName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#ec407a"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="#ec407a"
+        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+        android:text="Back" />
+
+
+</RelativeLayout>
